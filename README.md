@@ -9,8 +9,8 @@ This research code was produced by one person with a single set of eyes, it may 
 
 ## Todo's
 - [X] Release code
-- [] Create nice API for evaluating arbitrary model with PMB-NLL
-- [] Create nice API for use MB-NLL as loss function with any object detector
+- [ ] Create nice API for evaluating arbitrary model with PMB-NLL
+- [ ] Create nice API for use MB-NLL as loss function with any object detector
 
 ## Requirements
 #### Software Support:
