@@ -1,0 +1,12 @@
+VERSION: 2
+MODEL:
+  ROI_HEADS:
+    SCORE_THRESH_TEST: 0.0
+
+PROBABILISTIC_INFERENCE:
+  TREAT_AS_MB: False # If true, will ignore PPP, otherwise assume PMB
+  PPP_CONFIDENCE_THRES: 0.1 # Threshold, below which predictions are assigned to PPP
+
+MODEL:
+  PROBABILISTIC_MODELING:
+    NLL_MAX_NUM_SOLUTIONS: 25 # Number of assignments to use for NLL approximationc

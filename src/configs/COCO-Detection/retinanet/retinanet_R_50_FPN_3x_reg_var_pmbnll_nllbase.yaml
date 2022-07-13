@@ -1,0 +1,22 @@
+_BASE_: "Base-COCO-RetinaNet.yaml"
+
+MODEL:
+    PROBABILISTIC_MODELING:
+        # One of the following Loss types: 'none' or 'negative_log_likelihood', 'second_moment_matching', 'energy_loss'.
+        BBOX_COV_LOSS:
+            NAME: 'pmb_negative_log_likelihood'
+            COVARIANCE_TYPE: 'diagonal' # One of the following: 'full', 'diagonal'
+            DISTRIBUTION_TYPE: 'laplacian'
+
+        MATCHING_DISTANCE: 'euclidian'
+        ANNEALING_STEP: 1
+        NLL_MAX_NUM_SOLUTIONS: 1
+    RETINANET:
+        SCORE_THRESH_TEST: 0.0
+
+    WEIGHTS: "path to retinanet_R_50_FPN_3x_reg_var_nll.pth"
+
+SOLVER:
+    BASE_LR: 0.001  # Note that RetinaNet uses a different default learning rate
+    STEPS: (105000, 125000)
+    MAX_ITER: 135000

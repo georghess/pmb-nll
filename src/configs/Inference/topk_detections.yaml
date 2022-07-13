@@ -1,0 +1,7 @@
+_BASE_: "../Base-Inference.yaml"
+
+PROBABILISTIC_INFERENCE:
+    # One of the following: 'standard_nms', 'mc_dropout_ensembles',
+    # 'anchor_statistics', 'bayes_od', 'ensemble'
+    INFERENCE_MODE: 'topk_detections'
+    USE_MC_SAMPLING: false

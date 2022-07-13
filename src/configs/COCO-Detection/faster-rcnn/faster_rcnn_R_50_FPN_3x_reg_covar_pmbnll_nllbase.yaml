@@ -1,0 +1,20 @@
+_BASE_: "Base-COCO-RCNN-FPN.yaml"
+
+MODEL:
+    PROBABILISTIC_MODELING:
+        # One of the following Loss types: 'none' or 'negative_log_likelihood', 'second_moment_matching', 'energy_loss'.
+        BBOX_COV_LOSS:
+            NAME: 'pmb_negative_log_likelihood'
+            COVARIANCE_TYPE: 'full' # One of the following: 'full', 'diagonal'
+            DISTRIBUTION_TYPE: 'laplacian' # laplacian or gaussian
+        
+        MATCHING_DISTANCE: 'euclidian'
+        ANNEALING_STEP: 1
+        NLL_MAX_NUM_SOLUTIONS: 1
+
+    WEIGHTS: "path to faster_rcnn_R_50_FPN_3x_reg_covar_nll.pth.pth"
+
+SOLVER:
+    BASE_LR: 0.0025
+    STEPS: (105000, 125000)
+    MAX_ITER: 135000
