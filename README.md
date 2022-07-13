@@ -1,8 +1,16 @@
 # Object Detection as Probabilistic Set Prediction
-This code builds upon the [probabilisitc detectron2](https://github.com/asharakeh/probdet) repository. 
+This is the official implementation of [Object Detection as Probabilistic Set Prediction](https://arxiv.org/abs/2203.07980).
+
+The code builds upon the [probabilisitc detectron2](https://github.com/asharakeh/probdet) repository. 
 
 ## Disclaimer
 This research code was produced by one person with a single set of eyes, it may contain bugs and errors that I did not notice by the time of release.
+
+
+## Todo's
+- [X] Release code
+- [] Create nice API for evaluating arbitrary model with PMB-NLL
+- [] Create nice API for use MB-NLL as loss function with any object detector
 
 ## Requirements
 #### Software Support:
