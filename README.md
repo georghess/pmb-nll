@@ -114,5 +114,18 @@ DETR NLL | detr_R_50_reg_var_nll.yaml | topk_detections.yaml | [detr_R_50_reg_va
 DETR ES| detr_R_50_reg_var_es.yaml | topk_detections.yaml | [detr_R_50_reg_var_es.pth](https://drive.google.com/file/d/1Kgll1Ez0cLo_Wut07LJQef7eGP3xuG6_/view?usp=sharing)
 DETR MB-NLL | detr_R_50_reg_var_pmbnll_esbase.yaml | topk_detections.yaml | No pretained weights for blind review
 
+## Citation
+If you find this work useful, please consider citing
+```
+@inproceedings{hess2022pmb_nll,
+  title={Object Detection as Probabilistic Set Prediction},
+  author={Hess, Georg and Petersson, Christoffer and Svensson, Lennart},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2022}
+}
+```
+
 ## License
 This code is released under the [Apache 2.0 License](LICENSE.md).
+
+
