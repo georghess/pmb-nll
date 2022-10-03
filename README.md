@@ -1,6 +1,9 @@
 # Object Detection as Probabilistic Set Prediction [ECCV2022]
 This is the official implementation of the ECCV 2022 paper [Object Detection as Probabilistic Set Prediction](https://arxiv.org/abs/2203.07980).
 
+[![ECCV 2022 presentation](https://img.youtube.com/vi/UDWj7vNv970/0.jpg)](https://www.youtube.com/watch?v=UDWj7vNv970)
+
+
 The code builds upon the [probabilisitc detectron2](https://github.com/asharakeh/probdet) repository. 
 
 ## Disclaimer
